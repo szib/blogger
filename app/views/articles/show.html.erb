@@ -20,10 +20,12 @@
 
 <%= render partial: 'articles/comment', collection: @article.comments %>
 
-<p>
-  <%= link_to "edit", edit_article_path(@article) %>
-  <%= link_to "delete", article_path(@article), method: :delete, data: { confirm: "Really delete this article?"} %>
-</p>
+<% if logged_in? %>
+  <p>
+    <%= link_to "edit", edit_article_path(@article) %>
+    <%= link_to "delete", article_path(@article), method: :delete, data: { confirm: "Really delete this article?"} %>
+  </p>
+<% end %>
 
 <%= render partial: 'comments/form' %>
 
