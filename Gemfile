@@ -31,6 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use paperclip
+gem 'paperclip'
+
 group :production do
   gem 'pg'
 end
