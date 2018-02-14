@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 # Use paperclip
 gem 'paperclip'
 
+# Use sorcery
+gem 'sorcery'
+
 group :production do
   gem 'pg'
 end
